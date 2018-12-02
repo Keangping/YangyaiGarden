@@ -1,24 +1,236 @@
 {% load staticfiles %}
 <!DOCTYPE html>
-<head>
-	<title>Yangyai Garden</title>
-	<link rel="stylesheet" type="text/css" href="{% static 'base/css/style.css' %}">
-</head>
-<body>
-	<div>
-		<h1>test logo from static file</h1>
-		<img src="{% static 'base/images/logo.png' %}">
-	</div>
-	<div>
-		<h1>test navbar</h1>
-		<p><a href="{% url 'base:index' %}">home</a></p>
-		<p><a href="{% url 'base:about' %}">about</a></p>
-		<p><a href="{% url 'base:property' %}">property</a></p>
-		<p><a href="{% url 'base:service' %}">service</a></p>
-		<p><a href="{% url 'base:contactus' %}">contact us</a></p>
-		<p><a href="{% url 'base:activity' %}">activity</a></p>
-		<p><a href="{% url 'base:event' %}">event</a></p>
-	</div>
-	{% block body %}
+<html lang="en">
+	
+	<head>
+
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+
+	    <title>Yangyai Garden</title>
+
+	    <!-- Bootstrap core CSS -->
+	    <link href="{% static 'base/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+	    <!-- Custom styles for this template -->
+	    <link href="{% static 'base/css/scrolling-nav.css' %}" rel="stylesheet">
+	    <!-- Custom styles for slider -->
+    	<link href="{% static 'base/css/full-slider.css' %}" rel="stylesheet">
+
+	</head>
+
+	<body id="page-top">
+
+	    <!-- Navigation -->
+	    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+	      	<div class="container">
+		      	<a class="navbar-brand js-scroll-trigger" href="#page-top">YANGYAI GARDEN</a>
+		        
+		        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+		        	<span class="navbar-toggler-icon"></span>
+		        </button>
+		        
+		        <div class="collapse navbar-collapse" id="navbarResponsive">
+		        	<ul class="navbar-nav ml-auto">
+		            	<li class="nav-item">
+		              		<a class="nav-link js-scroll-trigger" href="#about">About</a>
+		            	</li>
+		            	<li class="nav-item">
+		              		<a class="nav-link js-scroll-trigger" href="#services">Services</a>
+		            	</li>
+		            	<li class="nav-item">
+		              		<a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+		            	</li>
+		            	<li class="nav-item">
+		              		<a class="nav-link js-scroll-trigger" href="#event">Event</a>
+		            	</li>
+		            	<li class="nav-item">
+		              		<a class="nav-link js-scroll-trigger" href="#property">Property</a>
+		            	</li>
+		          	</ul>
+		        </div>
+	      	</div>
+	    </nav>
+{% block body %}
 	{% endblock %}
-</body>
+	    <header>
+      		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        		<ol class="carousel-indicators">
+          			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        		</ol>
+	        	<div class="carousel-inner" role="listbox">	          	
+	          		<!-- Slide One - Set the background image for this slide in the line below -->
+	          		<div class="carousel-item active" style="background-image: url('{% static 'base/images/bgH.jpg' %}')">
+	            		<div class="carousel-caption d-none d-md-block">
+	              			<h3>First Slide</h3>
+	              			<p>This is a description for the first slide.</p>
+	            		</div>
+	          		</div>
+	          	
+	          		<!-- Slide Two - Set the background image for this slide in the line below -->
+	          		<div class="carousel-item" style="background-image: url('{% static 'base/images/bhA.jpg' %}')">
+	            		<div class="carousel-caption d-none d-md-block">
+	              			<h3>Second Slide</h3>
+	              			<p>This is a description for the second slide.</p>
+	            		</div>
+	          		</div>
+	          	
+	          		<!-- Slide Three - Set the background image for this slide in the line below -->
+	          		<div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+	            		<div class="carousel-caption d-none d-md-block">
+	              			<h3>Third Slide</h3>
+	              			<p>This is a description for the third slide.</p>
+	            		</div>
+	          		</div>
+        		</div>
+        		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          			<span class="sr-only">Previous</span>
+        		</a>
+        		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+          			<span class="sr-only">Next</span>
+        		</a>
+      		</div>
+    	</header>
+
+	    <section id="about">
+	      	<div class="container">
+	        	<div class="row">
+	          		<div class="col-lg-8 mx-auto">
+	            		<h2>About this page</h2>
+	            		<p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
+	            		<ul>
+	              			<li>Clickable nav links that smooth scroll to page sections</li>
+	              			<li>Responsive behavior when clicking nav links perfect for a one page website</li>
+	              			<li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
+	            			<li>Minimal custom CSS so you are free to explore your own unique design options</li>
+	            		</ul>
+	          		</div>
+	        	</div>
+	      	</div>
+	    </section>
+
+	    <section id="services" class="bg-light">
+	      	<div class="container">
+	        	<div class="row">
+	          		<div class="col-lg-8 mx-auto">
+	            		<h2>Services we offer</h2>
+	            		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+	          		</div>
+	        	</div>
+	      	</div>
+	    </section>
+
+	    <section id="contact">
+	      	<div class="container">
+	        	<div class="row">
+	          		<div class="col-lg-8 mx-auto">
+	            		<h2>Contact us</h2>
+	            		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+	          		</div>
+	        	</div>
+	      	</div>
+	    </section>
+
+	    <section id="event" class="bg-light">
+	      	<div class="container">
+	        	<div class="row">
+	          		<div class="col-lg-8 mx-auto">
+	            		<h2>Event</h2>
+	            		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+	          		</div>
+	        	</div>
+	      	</div>
+	    </section>
+
+	    <section id="property">
+			<!-- Page Content -->
+			<div class="container">
+			  	<!-- Portfolio Item Heading -->
+			 	<h1 class="my-4">Private House with Garden View
+			    	<small>Secondary Text</small>
+			  	</h1>
+
+			  	<!-- Portfolio Item Row -->
+			  	<div class="row">
+
+			    	<div class="col-md-8">
+			      		<img class="img-fluid" src="{% static 'base/images/750x500.png' %}" alt="">
+			    	</div>
+
+				    <div class="col-md-4">
+				      	<h3 class="my-3">House Description</h3>
+				      	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+				      	<h3 class="my-3">House Details</h3>
+				      	<ul>
+				        	<li>Free wifi</li>
+				        	<li>Air conditioner</li>
+				        	<li>Hot water</li>
+				        	<li>Fan</li>
+				      	</ul>
+				    </div>
+				</div>
+			  	<!-- /.row -->
+
+			  	<!-- Related Projects Row -->
+			  	<h3 class="my-4">Related images</h3>
+
+			  	<div class="row">
+
+			    	<div class="col-md-3 col-sm-6 mb-4">
+			      		<a href="#">
+			            	<img class="img-fluid" src="{% static 'base/images/500x300.png' %}" alt="">
+			          	</a>
+			    	</div>
+
+			    	<div class="col-md-3 col-sm-6 mb-4">
+			      		<a href="#">
+			            	<img class="img-fluid" src="{% static 'base/images/500x300.png' %}" alt="">
+			          	</a>
+			    	</div>
+
+			    	<div class="col-md-3 col-sm-6 mb-4">
+			      		<a href="#">
+			            	<img class="img-fluid" src="{% static 'base/images/500x300.png' %}" alt="">
+			          	</a>
+			    	</div>
+
+			    	<div class="col-md-3 col-sm-6 mb-4">
+			      		<a href="#">
+			            	<img class="img-fluid" src="{% static 'base/images/500x300.png' %}" alt="">
+			          	</a>
+			    	</div>
+
+			  	</div>
+			  	<!-- /.row -->
+
+			</div>
+			<!-- /.container -->
+	    </section>
+
+	    <!-- Footer -->
+	    <footer class="py-5 bg-dark">
+	      	<div class="container">
+	        	<p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+	      	</div>
+	      	<!-- /.container -->
+	    </footer>
+
+	    <!-- Bootstrap core JavaScript -->
+	    <script src="{% static 'base/vendor/jquery/jquery.min.js' %}"></script>
+	    <script src="{% static 'base/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+	    <!-- Plugin JavaScript -->
+	    <script src="{% static 'base/vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+	    <!-- Custom JavaScript for this theme -->
+	    <script src="{% static 'base/js/scrolling-nav.js' %}"></script>
+	    
+	</body>
+
+</html>
