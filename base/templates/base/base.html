@@ -1,0 +1,24 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<head>
+	<title>Yangyai Garden</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'base/css/style.css' %}">
+</head>
+<body>
+	<div>
+		<h1>test logo from static file</h1>
+		<img src="{% static 'base/images/logo.png' %}">
+	</div>
+	<div>
+		<h1>test navbar</h1>
+		<p><a href="{% url 'base:index' %}">home</a></p>
+		<p><a href="{% url 'base:about' %}">about</a></p>
+		<p><a href="{% url 'base:property' %}">property</a></p>
+		<p><a href="{% url 'base:service' %}">service</a></p>
+		<p><a href="{% url 'base:contactus' %}">contact us</a></p>
+		<p><a href="{% url 'base:activity' %}">activity</a></p>
+		<p><a href="{% url 'base:event' %}">event</a></p>
+	</div>
+	{% block body %}
+	{% endblock %}
+</body>
