@@ -18,6 +18,8 @@
     	<link href="{% static 'base/css/full-slider.css' %}" rel="stylesheet">
 	    <!-- Custom styles for this template -->
 	    <link href="{% static 'base/css/scrolling-nav.css' %}" rel="stylesheet">
+	   	<!-- main styles for this template -->
+	    <link href="{% static 'base/css/main.css' %}" rel="stylesheet">
 
 	</head>
 
@@ -105,14 +107,8 @@
 	      	<div class="container">
 	        	<div class="row">
 	          		<div class="col-lg-8 mx-auto">
-	            		<h2>About this page</h2>
-	            		<p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
-	            		<ul>
-	              			<li>Clickable nav links that smooth scroll to page sections</li>
-	              			<li>Responsive behavior when clicking nav links perfect for a one page website</li>
-	              			<li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-	            			<li>Minimal custom CSS so you are free to explore your own unique design options</li>
-	            		</ul>
+	            		<h1>About</h1>
+	            		<p class="lead">Yangyai Garden, the name came from the biggest tree on Koh Phangan, combined with a garden on our place which is grown with coconut tree, fruit, vegetable and herb. Our garden is organic and has a certificate. Guests can enjoy our products from the garden as well. Our philosophy of service is sincere, friendly and honest.</p>
 	          		</div>
 	        	</div>
 	      	</div>
@@ -121,129 +117,58 @@
 	    <section id="property" class="bg-light">
 			<!-- Property Content 1-->
 			<div class="container">
-			  	<!-- Portfolio Item Heading -->
-			 	<h1 class="my-4">Private House with Garden View
-			    	<small>Secondary Text</small>
-			  	</h1>
+				<div class="row">
+					<div class="col-lg-8 mx-auto">
+						<h1>Property</h1>
 
-			  	<!-- Portfolio Item Row -->
-			  	<div class="row">
+				      	<!-- House1 Heading -->
+				      	<h3 class="my-4">Private House
+				        	<small> with Garden View</small>
+				      	</h3>
 
-			    	<div class="col-md-8">
-			      		<img class="img-fluid" src="{% static 'base/images/750x500.png' %}" alt="">
-			    	</div>
+				      	<!-- House one row -->
+				      	<div class="row">
+				        	<div class="col-md-7">
+				          		<a href="#">
+				            		<img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+				          		</a>
+				        	</div>
+				        	<div class="col-md-5">
+				          		<h3>House Description</h3>
+				          		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+				          		<a class="btn btn-primary" href="#">View Full Details</a>
+				        	</div>
+				      	</div>
+				      	<!-- /.row -->
 
-				    <div class="col-md-4">
-				      	<h3 class="my-3">House Description</h3>
-				      	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-				      	<h3 class="my-3">House Details</h3>
-				      	<ul>
-				        	<li>Free wifi</li>
-				        	<li>Air conditioner</li>
-				        	<li>Hot water</li>
-				        	<li>Fan</li>
-				      	</ul>
-				    </div>
-				</div>
-			  	<!-- /.row -->
+				      	<hr>
 
-			  	<!-- Related Projects Row -->
-			  	<h3 class="my-4">Related images</h3>
+				      	<!-- Roome Heading -->
+				      	<h3 class="my-4">Private Double Room
+				        	<small> with Garden View</small>
+				      	</h3>
 
-			  	<div class="row">
+				      	<!-- Room one row -->
+				      	<div class="row">
+				        	<div class="col-md-7">
+				          		<a href="#">
+				            		<img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+				          		</a>
+				        	</div>
+				        	<div class="col-md-5">
+				          		<h3>Room Description</h3>
+				          		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+				          		<a class="btn btn-primary" href="#">View Full Details</a>
+				        	</div>
+				      	</div>
+				      	<!-- /.row -->
 
-			    	<div class="col-md-3 col-sm-6 mb-4">
-			      		<a href="#">
-			            	<img class="img-fluid" src="{% static 'base/images/500x300.png' %}" alt="">
-			          	</a>
-			    	</div>
+				      	<hr>
 
-			    	<div class="col-md-3 col-sm-6 mb-4">
-			      		<a href="#">
-			            	<img class="img-fluid" src="{% static 'base/images/500x300.png' %}" alt="">
-			          	</a>
-			    	</div>
-
-			    	<div class="col-md-3 col-sm-6 mb-4">
-			      		<a href="#">
-			            	<img class="img-fluid" src="{% static 'base/images/500x300.png' %}" alt="">
-			          	</a>
-			    	</div>
-
-			    	<div class="col-md-3 col-sm-6 mb-4">
-			      		<a href="#">
-			            	<img class="img-fluid" src="{% static 'base/images/500x300.png' %}" alt="">
-			          	</a>
-			    	</div>
-
-			  	</div>
-			  	<!-- /.row -->
-
-			</div>
-			<!-- /.container -->
-
-			<!-- Property Content 2 -->
-			<div class="container">
-			  	<!-- Portfolio Item Heading -->
-			 	<h1 class="my-4">Private Room with Garden View
-			    	<small>Secondary Text</small>
-			  	</h1>
-
-			  	<!-- Portfolio Item Row -->
-			  	<div class="row">
-
-			    	<div class="col-md-8">
-			      		<img class="img-fluid" src="{% static 'base/images/750x500.png' %}" alt="">
-			    	</div>
-
-				    <div class="col-md-4">
-				      	<h3 class="my-3">Room Description</h3>
-				      	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-				      	<h3 class="my-3">House Details</h3>
-				      	<ul>
-				        	<li>Free wifi</li>
-				        	<li>Air conditioner</li>
-				        	<li>Hot water</li>
-				        	<li>Fan</li>
-				      	</ul>
-				    </div>
-				</div>
-			  	<!-- /.row -->
-
-			  	<!-- Related Projects Row -->
-			  	<h3 class="my-4">Related images</h3>
-
-			  	<div class="row">
-
-			    	<div class="col-md-3 col-sm-6 mb-4">
-			      		<a href="#">
-			            	<img class="img-fluid" src="{% static 'base/images/500x300.png' %}" alt="">
-			          	</a>
-			    	</div>
-
-			    	<div class="col-md-3 col-sm-6 mb-4">
-			      		<a href="#">
-			            	<img class="img-fluid" src="{% static 'base/images/500x300.png' %}" alt="">
-			          	</a>
-			    	</div>
-
-			    	<div class="col-md-3 col-sm-6 mb-4">
-			      		<a href="#">
-			            	<img class="img-fluid" src="{% static 'base/images/500x300.png' %}" alt="">
-			          	</a>
-			    	</div>
-
-			    	<div class="col-md-3 col-sm-6 mb-4">
-			      		<a href="#">
-			            	<img class="img-fluid" src="{% static 'base/images/500x300.png' %}" alt="">
-			          	</a>
-			    	</div>
-
-			  	</div>
-			  	<!-- /.row -->
-
-			</div>
-			<!-- /.container -->
+			      	</div>
+			    </div>
+		    </div>
+			  	
 	    </section>
 
 	    <section id="services">
@@ -251,7 +176,33 @@
 	        	<div class="row">
 	          		<div class="col-lg-8 mx-auto">
 	            		<h2>Services we offer</h2>
-	            		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+	            		<p class="lead">Our services are from third party, which we work with as agent. For more information please contact our reception.</p>
+
+						<!-- Services Row -->
+						<div class="row">
+						    <div class="col-lg-4 col-sm-6 text-center mb-4">
+						    	<img class="rounded-circle img-fluid d-block mx-auto" src="{% static 'base/images/bike.png' %}" alt="">
+						      	<h3>Bike
+						        	<small> service</small>
+						      	</h3>
+						      	<p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+						    </div>
+						    <div class="col-lg-4 col-sm-6 text-center mb-4">
+						      	<img class="rounded-circle img-fluid d-block mx-auto" src="{% static 'base/images/laundry.png' %}" alt="">
+						      	<h3>Laundry
+						        	<small> service</small>
+						      	</h3>
+						      	<p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+						    </div>
+						    <div class="col-lg-4 col-sm-6 text-center mb-4">
+						      	<img class="rounded-circle img-fluid d-block mx-auto" src="{% static 'base/images/ticket.png' %}" alt="">
+						      	<h3>Ticket
+						        	<small> service</small>
+						      	</h3>
+						      	<p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+						    </div>
+						</div>
+
 	          		</div>
 	        	</div>
 	      	</div>
@@ -263,114 +214,167 @@
 	          		<div class="col-lg-8 mx-auto">
 	            		<h2>Event</h2>
 	            		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
-	          		</div>
-	        	</div>
+
+						<!-- Portfolio Item Heading -->
+						<h3 class="my-4">Full Moon Party
+						</h3>
+						<div class="row">
+
+						    <div class="col-md-6">
+						      <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+						    </div>
+
+						    <div class="col-md-6 my-4">
+						      <h5>Full Moon party Description</h5>
+						      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+						      <h5 class="my-3">Full Moon party dates</h5>
+						      <ul>
+						        <li>20 December 2018</li>
+						        <li>20 January 2019</li>
+						      </ul>
+						    </div>
+						</div>
+						<!-- /.row -->
+
+						<hr>
+
+						<!-- Portfolio Item Heading -->
+						<h3 class="my-4">Half Moon Party
+						</h3>
+						<div class="row">
+
+						    <div class="col-md-6">
+						      <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+						    </div>
+
+						    <div class="col-md-6 my-4">
+						      <h5>Half Moon party Description</h5>
+						      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+						      <h5 class="my-3">Half Moon party dates</h5>
+						      <ul>
+						        <li>30 December 2018</li>
+
+						      </ul>
+						    </div>
+						</div>
+						<!-- /.row -->
+
+						<hr>
+					</div>
+				</div>
 	      	</div>
 	    </section>  	
 
 	    <section id="activity">
 			<!-- Page Content -->
 			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 mx-auto">
+						<!-- Page Heading -->
+					  	<h2>Activities 
+					    	<small>@Koh Phangan</small>
+					  	</h2>
+					</div>
+				</div>
+				
+				<div class="col-lg-8 mx-auto">
+				  	
 
-			  	<!-- Page Heading -->
-			  	<h1 class="my-4">Activities @Koh Phangan
-			    	<small>Secondary Text</small>
-			  	</h1>
+				  	<div class="row">
+				    	<div class="col-lg-4 col-sm-6 mb-4">
+				      		<div class="card h-100">
+				        		<a href="#"><img class="card-img-top" src="{% static 'base/images/700x400.png' %}" alt=""></a>
+				        		<div class="card-body">
+				          			<h4 class="card-title">
+				            			<a href="#">Kite surfing</a>
+				          			</h4>
+				          			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt?</p>
+				        		</div>
+				      		</div>
+				    	</div>
+				    	<div class="col-lg-4 col-sm-6 mb-4">
+				      		<div class="card h-100">
+				        		<a href="#"><img class="card-img-top" src="{% static 'base/images/700x400.png' %}" alt=""></a>
+				        		<div class="card-body">
+				          			<h4 class="card-title">
+				            			<a href="#">Hiking</a>
+				          			</h4>
+				          			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+				        		</div>
+				      		</div>
+				    	</div>
+				    	<div class="col-lg-4 col-sm-6 mb-4">
+				      		<div class="card h-100">
+				        		<a href="#"><img class="card-img-top" src="{% static 'base/images/700x400.png' %}" alt=""></a>
+				        		<div class="card-body">
+				          			<h4 class="card-title">
+				            			<a href="#">Mini golf</a>
+				          			</h4>
+				          			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque.</p>
+				        		</div>
+				      		</div>
+				    	</div>
+				    	<div class="col-lg-4 col-sm-6 mb-4">
+				      		<div class="card h-100">
+				        		<a href="#"><img class="card-img-top" src="{% static 'base/images/700x400.png' %}" alt=""></a>
+				        		<div class="card-body">
+				          			<h4 class="card-title">
+				            			<a href="#">Football golf</a>
+				          			</h4>
+				          			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+				        		</div>
+				      		</div>
+				    	</div>
+				    	<div class="col-lg-4 col-sm-6 mb-4">
+				      		<div class="card h-100">
+				        		<a href="#"><img class="card-img-top" src="{% static 'base/images/700x400.png' %}" alt=""></a>
+				        		<div class="card-body">
+				          			<h4 class="card-title">
+				            			<a href="#">Fishing</a>
+				          			</h4>
+				          			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+				        		</div>
+				      		</div>
+				    	</div>
+				    	<div class="col-lg-4 col-sm-6 mb-4">
+				      		<div class="card h-100">
+				        		<a href="#"><img class="card-img-top" src="{% static 'base/images/700x400.png' %}" alt=""></a>
+				        		<div class="card-body">
+				          			<h4 class="card-title">
+				            			<a href="#">Surfing</a>
+				          			</h4>
+				          			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident.</p>
+				        		</div>
+				      		</div>
+				    	</div>
+				  	</div>
+				 	<!-- /.row -->
 
-			  	<div class="row">
-			    	<div class="col-lg-4 col-sm-6 mb-4">
-			      		<div class="card h-100">
-			        		<a href="#"><img class="card-img-top" src="{% static 'base/images/700x400.png' %}" alt=""></a>
-			        		<div class="card-body">
-			          			<h4 class="card-title">
-			            			<a href="#">Project One</a>
-			          			</h4>
-			          			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-			        		</div>
-			      		</div>
-			    	</div>
-			    	<div class="col-lg-4 col-sm-6 mb-4">
-			      		<div class="card h-100">
-			        		<a href="#"><img class="card-img-top" src="{% static 'base/images/700x400.png' %}" alt=""></a>
-			        		<div class="card-body">
-			          			<h4 class="card-title">
-			            			<a href="#">Project Two</a>
-			          			</h4>
-			          			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-			        		</div>
-			      		</div>
-			    	</div>
-			    	<div class="col-lg-4 col-sm-6 mb-4">
-			      		<div class="card h-100">
-			        		<a href="#"><img class="card-img-top" src="{% static 'base/images/700x400.png' %}" alt=""></a>
-			        		<div class="card-body">
-			          			<h4 class="card-title">
-			            			<a href="#">Project Three</a>
-			          			</h4>
-			          			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
-			        		</div>
-			      		</div>
-			    	</div>
-			    	<div class="col-lg-4 col-sm-6 mb-4">
-			      		<div class="card h-100">
-			        		<a href="#"><img class="card-img-top" src="{% static 'base/images/700x400.png' %}" alt=""></a>
-			        		<div class="card-body">
-			          			<h4 class="card-title">
-			            			<a href="#">Project Four</a>
-			          			</h4>
-			          			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-			        		</div>
-			      		</div>
-			    	</div>
-			    	<div class="col-lg-4 col-sm-6 mb-4">
-			      		<div class="card h-100">
-			        		<a href="#"><img class="card-img-top" src="{% static 'base/images/700x400.png' %}" alt=""></a>
-			        		<div class="card-body">
-			          			<h4 class="card-title">
-			            			<a href="#">Project Five</a>
-			          			</h4>
-			          			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-			        		</div>
-			      		</div>
-			    	</div>
-			    	<div class="col-lg-4 col-sm-6 mb-4">
-			      		<div class="card h-100">
-			        		<a href="#"><img class="card-img-top" src="{% static 'base/images/700x400.png' %}" alt=""></a>
-			        		<div class="card-body">
-			          			<h4 class="card-title">
-			            			<a href="#">Project Six</a>
-			          			</h4>
-			          			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
-			        		</div>
-			      		</div>
-			    	</div>
-			  	</div>
-			 	<!-- /.row -->
-
-			  	<!-- Pagination -->
-			  	<ul class="pagination justify-content-center">
-			    	<li class="page-item">
-			      		<a class="page-link" href="#" aria-label="Previous">
-			            	<span aria-hidden="true">&laquo;</span>
-			            	<span class="sr-only">Previous</span>
-			          	</a>
-			    	</li>
-			    	<li class="page-item">
-			      		<a class="page-link" href="#">1</a>
-			    	</li>
-			    	<li class="page-item">
-			      		<a class="page-link" href="#">2</a>
-			    	</li>
-			    	<li class="page-item">
-			      		<a class="page-link" href="#">3</a>
-			    	</li>
-			    	<li class="page-item">
-			      		<a class="page-link" href="#" aria-label="Next">
-			            	<span aria-hidden="true">&raquo;</span>
-			            	<span class="sr-only">Next</span>
-			          	</a>
-			    	</li>
-			  	</ul>
+				  	<!-- Pagination -->
+				  	<ul class="pagination justify-content-center">
+				    	<li class="page-item">
+				      		<a class="page-link" href="#" aria-label="Previous">
+				            	<span aria-hidden="true">&laquo;</span>
+				            	<span class="sr-only">Previous</span>
+				          	</a>
+				    	</li>
+				    	<li class="page-item">
+				      		<a class="page-link" href="#">1</a>
+				    	</li>
+				    	<li class="page-item">
+				      		<a class="page-link" href="#">2</a>
+				    	</li>
+				    	<li class="page-item">
+				      		<a class="page-link" href="#">3</a>
+				    	</li>
+				    	<li class="page-item">
+				      		<a class="page-link" href="#" aria-label="Next">
+				            	<span aria-hidden="true">&raquo;</span>
+				            	<span class="sr-only">Next</span>
+				          	</a>
+				    	</li>
+				  	</ul>
+				</div>
 			</div>
 			<!-- /.container -->
 	    </section>
@@ -380,14 +384,63 @@
 	        	<div class="row">
 	          		<div class="col-lg-8 mx-auto">
 	            		<h2>Contact us</h2>
-	            		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+	            		<img src="{% static 'base/images/add.png' %}" alt="">
+	            		<p>28/1-4 Moo 2, Baan Tai, Koh Phangan, Surat Thani, Thailand 84280</p>
+	            		<img src="{% static 'base/images/phone.png' %}" alt="">
+	            		<p>Tel : +66(0)61-117-8127</p>
+	            		<img src="{% static 'base/images/email.png' %}" alt="">
+	            		<p>E-mail : yangyaigarden@gmail.com</p>
+
 	          		</div>
+	        	</div>
+	        	<div class="row">
+	        		<div class="col-sm-3"></div>
+	        		<div class="col-sm-6 mx-auto">
+	        			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31461.60290804552!2d100.01249776962605!3d9.706594300000019!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3054fdac64f6eff9%3A0x811c3b017c68641a!2sYangyai+Garden!5e0!3m2!1sen!2sth!4v1543921713809" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+	        		</div>
+	        		<div class="col-sm-3"></div>
+	        	</div>
+	        	<div class="row">
+	        		<div class="col-sm-3"></div>
+	        		<div class="col-sm-6">
+	        			<input id="field1" type="text" required="" aria-invalid="false" name="Name" class="cf1_required" placeholder="Name *" data-aid="nameField" value="" style="width: 100%;">
+						<input id="field2" type="text" required="" aria-invalid="false" name="Email" class="cf1_required" placeholder="Email *" data-aid="emailField" value="" style="width: 100%;">
+						<input id="field3" type="tel" aria-invalid="false" name="Phone" class="" placeholder="Phone" data-aid="phoneField" value="" style="width: 100%;">
+						<input id="field4" type="text" aria-invalid="false" name="Subject" class="" placeholder="Subject" data-aid="subjectField" value="" style="width: 100%;">
+						<textarea name="Message" class="cf1fieldMessage" placeholder="Message" data-aid="messageField" id="i0xzsijafieldMessage" style="width: 100%; height: 130px;">
+						</textarea>
+						<div class="cf1_form-footer">
+							<button type="submit" id="i0xzsijasubmit" class="cf1submit float-right">Send</button>
+						</div>
+	        		</div>
+	        		<div class="col-sm-3"></div>
 	        	</div>
 	      	</div>
 	    </section>
 
 	    <!-- Footer -->
 	    <footer class="py-5 bg-dark">
+	    	<div class="footer-social">
+				<div class="container text-center">
+					<ul class="list-inline">
+						<li class="list-inline-item">
+							<a href="#">
+								<img class="img-fluid" src="{% static 'base/images/flogo.png' %}" alt="">
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#">
+								<img class="img-fluid" src="{% static 'base/images/mlogo.png' %}" alt="">
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#">
+								<img class="img-fluid" src="{% static 'base/images/instalogo.png' %}" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 	      	<div class="container">
 	        	<p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
 	      	</div>

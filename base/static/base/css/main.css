@@ -1,0 +1,5 @@
+footer .footer-social{margin-top:0px;margin-bottom:0;}
+footer .footer-social ul.list-inline{margin:0}
+footer .footer-social ul.list-inline li{margin:0 10px}
+footer .footer-social ul.list-inline li a{display:block;width:50px;height:50px;color:white;border-radius:100%;font-size:25px;line-height:50px}
+footer .footer-main{padding:50px 0;text-align:center}
