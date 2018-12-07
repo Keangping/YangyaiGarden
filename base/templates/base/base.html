@@ -136,7 +136,90 @@
 				        	<div class="col-md-5">
 				          		<h3>House Description</h3>
 				          		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-				          		<a class="btn btn-primary" href="#">View Full Details</a>
+				          		<a class="btn btn-primary" data-toggle="modal" data-target="#fullProperty" href="#">View Full Details</a>
+				          		<div id="fullProperty" class="modal" role="dialog">
+				          			<div class="modal-dialog modal-lg">
+				          				<div class="modal-content">
+				          				<section>
+				          					<div class="model-header">
+		          							    <!-- Navigation -->
+											    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+											      	<div class="container">
+												      	<h2 style="color: white">Pravate House with Garden View</h2>
+												      	<a class="nav-link js-scroll-trigger btn btn-primary" data-toggle="modal" data-target="#fullProperty" href="#">Close</a>
+											      	</div>
+											    </nav>
+				          					</div>
+				          					<div class="model-body">
+				          						
+				          						<!-- Page Content -->
+												<div class="container">
+
+												  <!-- Portfolio Item Heading -->
+												  <h1 class="my-4">Page Heading
+												    <small>Secondary Text</small>
+												  </h1>
+
+												  <!-- Portfolio Item Row -->
+												  <div class="row">
+
+												    <div class="col-md-8">
+												      <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+												    </div>
+
+												    <div class="col-md-4">
+												      <h3 class="my-3">Project Description</h3>
+												      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+												      <h3 class="my-3">Project Details</h3>
+												      <ul>
+												        <li>Lorem Ipsum</li>
+												        <li>Dolor Sit Amet</li>
+												        <li>Consectetur</li>
+												        <li>Adipiscing Elit</li>
+												      </ul>
+												    </div>
+
+												  </div>
+												  <!-- /.row -->
+
+												  <div class="row">
+
+												    <div class="col-md-3 col-sm-6 mb-4">
+												      <a href="#">
+												            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+												          </a>
+												    </div>
+
+												    <div class="col-md-3 col-sm-6 mb-4">
+												      <a href="#">
+												            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+												          </a>
+												    </div>
+
+												    <div class="col-md-3 col-sm-6 mb-4">
+												      <a href="#">
+												            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+												          </a>
+												    </div>
+
+												    <div class="col-md-3 col-sm-6 mb-4">
+												      <a href="#">
+												            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+												          </a>
+												    </div>
+
+												  </div>
+												  <!-- /.row -->
+
+												</div>
+												<!-- /.container -->
+												
+				          					</div>
+				          					<div class="model-footer">Footer</div>
+				          				</section>
+				          				</div>
+				          			</div>
+				          		</div>
 				        	</div>
 				      	</div>
 				      	<!-- /.row -->
@@ -388,7 +471,9 @@
 	            		<p>28/1-4 Moo 2, Baan Tai, Koh Phangan, Surat Thani, Thailand 84280</p>
 	            		<img src="{% static 'base/images/phone.png' %}" alt="">
 	            		<p>Tel : +66(0)61-117-8127</p>
+	            		<a href="https://mail.google.com/mail/?view=cm&fs=1&to=yangyaigarden@gmail.com">
 	            		<img src="{% static 'base/images/email.png' %}" alt="">
+	            	</a>
 	            		<p>E-mail : yangyaigarden@gmail.com</p>
 
 	          		</div>
@@ -397,21 +482,6 @@
 	        		<div class="col-sm-3"></div>
 	        		<div class="col-sm-6 mx-auto">
 	        			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31461.60290804552!2d100.01249776962605!3d9.706594300000019!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3054fdac64f6eff9%3A0x811c3b017c68641a!2sYangyai+Garden!5e0!3m2!1sen!2sth!4v1543921713809" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-	        		</div>
-	        		<div class="col-sm-3"></div>
-	        	</div>
-	        	<div class="row">
-	        		<div class="col-sm-3"></div>
-	        		<div class="col-sm-6">
-	        			<input id="field1" type="text" required="" aria-invalid="false" name="Name" class="cf1_required" placeholder="Name *" data-aid="nameField" value="" style="width: 100%;">
-						<input id="field2" type="text" required="" aria-invalid="false" name="Email" class="cf1_required" placeholder="Email *" data-aid="emailField" value="" style="width: 100%;">
-						<input id="field3" type="tel" aria-invalid="false" name="Phone" class="" placeholder="Phone" data-aid="phoneField" value="" style="width: 100%;">
-						<input id="field4" type="text" aria-invalid="false" name="Subject" class="" placeholder="Subject" data-aid="subjectField" value="" style="width: 100%;">
-						<textarea name="Message" class="cf1fieldMessage" placeholder="Message" data-aid="messageField" id="i0xzsijafieldMessage" style="width: 100%; height: 130px;">
-						</textarea>
-						<div class="cf1_form-footer">
-							<button type="submit" id="i0xzsijasubmit" class="cf1submit float-right">Send</button>
-						</div>
 	        		</div>
 	        		<div class="col-sm-3"></div>
 	        	</div>
