@@ -5,15 +5,15 @@
  */
 
 header {
-  padding: 154px 0 100px;
+  padding: 10px 0 0px;
 }
 
 @media (min-width: 992px) {
   header {
-    padding: 156px 0 100px;
+    padding: 10px 0 0px;
   }
 }
 
 section {
-  padding: 150px 0;
+  padding: 140px 0;
 }
